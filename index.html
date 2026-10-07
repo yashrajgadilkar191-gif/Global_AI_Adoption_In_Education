@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Global AI Adoption in Education</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .viz-container {
+            display: none;
+            margin-top: 25px;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Global AI Adoption in Education</h1>
+
+    <button onclick="showDashboard()">Dashboard</button>
+    <button onclick="showStory()">Story</button>
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="viz-container">
+
+        <h2>Dashboard</h2>
+
+        <div class='tableauPlaceholder' id='vizDashboard'
+             style='position: relative'>
+
+            <noscript>
+                <a href='#'>
+                    <img alt='Dashboard'
+                    src='https://public.tableau.com/static/images/Gl/GlobalaiAdoptioninEducationFinal/Dashboard1/1_rss.png'
+                    style='border: none' />
+                </a>
+            </noscript>
+
+            <object class='tableauViz' style='display:none;'>
+
+                <param name='host_url'
+                       value='https%3A%2F%2Fpublic.tableau.com%2F' />
+
+                <param name='embed_code_version'
+                       value='3' />
+
+                <param name='site_root'
+                       value='' />
+
+                <param name='name'
+                       value='GlobalaiAdoptioninEducationFinal&#47;Dashboard1' />
+
+                <param name='tabs'
+                       value='yes' />
+
+                <param name='toolbar'
+                       value='yes' />
+
+                <param name='static_image'
+                       value='https://public.tableau.com/static/images/Gl/GlobalaiAdoptioninEducationFinal/Dashboard1/1.png' />
+
+                <param name='animate_transition'
+                       value='yes' />
+
+                <param name='display_static_image'
+                       value='yes' />
+
+                <param name='display_spinner'
+                       value='yes' />
+
+                <param name='display_overlay'
+                       value='yes' />
+
+                <param name='display_count'
+                       value='yes' />
+
+                <param name='language'
+                       value='en-GB' />
+
+            </object>
+        </div>
+
+        <script>
+            var divElement = document.getElementById('vizDashboard');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+
+            vizElement.style.width = '1300px';
+            vizElement.style.height = '1050px';
+
+            var scriptElement = document.createElement('script');
+            scriptElement.src =
+                'https://public.tableau.com/javascripts/api/viz_v1.js';
+
+            vizElement.parentNode.insertBefore(
+                scriptElement,
+                vizElement
+            );
+        </script>
+
+    </div>
+
+
+    <!-- STORY -->
+    <div id="story" class="viz-container">
+
+        <h2>Story</h2>
+
+        <div class='tableauPlaceholder' id='vizStory'
+             style='position: relative'>
+
+            <noscript>
+                <a href='#'>
+                    <img alt='Story'
+                    src='https://public.tableau.com/static/images/Gl/GlobalaiAdoptioninEducationFinal/Story1/1_rss.png'
+                    style='border: none' />
+                </a>
+            </noscript>
+
+            <object class='tableauViz' style='display:none;'>
+
+                <param name='host_url'
+                       value='https%3A%2F%2Fpublic.tableau.com%2F' />
+
+                <param name='embed_code_version'
+                       value='3' />
+
+                <param name='site_root'
+                       value='' />
+
+                <param name='name'
+                       value='GlobalaiAdoptioninEducationFinal&#47;Story1' />
+
+                <param name='tabs'
+                       value='yes' />
+
+                <param name='toolbar'
+                       value='yes' />
+
+                <param name='static_image'
+                       value='https://public.tableau.com/static/images/Gl/GlobalaiAdoptioninEducationFinal/Story1/1.png' />
+
+                <param name='animate_transition'
+                       value='yes' />
+
+                <param name='display_static_image'
+                       value='yes' />
+
+                <param name='display_spinner'
+                       value='yes' />
+
+                <param name='display_overlay'
+                       value='yes' />
+
+                <param name='display_count'
+                       value='yes' />
+
+                <param name='language'
+                       value='en-GB' />
+
+            </object>
+        </div>
+
+        <script>
+            var divElement = document.getElementById('vizStory');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+
+            vizElement.style.width = '1300px';
+            vizElement.style.height = '1050px';
+
+            var scriptElement = document.createElement('script');
+            scriptElement.src =
+                'https://public.tableau.com/javascripts/api/viz_v1.js';
+
+            vizElement.parentNode.insertBefore(
+                scriptElement,
+                vizElement
+            );
+        </script>
+
+    </div>
+
+
+    <script>
+
+        function showDashboard() {
+            document.getElementById("dashboard").classList.add("active");
+            document.getElementById("story").classList.remove("active");
+        }
+
+        function showStory() {
+            document.getElementById("story").classList.add("active");
+            document.getElementById("dashboard").classList.remove("active");
+        }
+
+        // Show Dashboard when page opens
+        showDashboard();
+
+    </script>
+
+</body>
+</html>
